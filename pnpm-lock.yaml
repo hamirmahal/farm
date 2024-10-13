@@ -501,7 +501,7 @@ importers:
         version: link:../../packages/core
       '@farmfe/plugin-react':
         specifier: ^1.1.0
-        version: link:../../rust-plugins/react
+        version: 1.2.4
       '@types/react':
         specifier: '18'
         version: 18.2.35
@@ -2370,7 +2370,7 @@ importers:
   packages/core:
     dependencies:
       '@farmfe/runtime':
-        specifier: workspace:0.12.6
+        specifier: workspace:0.12.7
         version: link:../runtime
       '@farmfe/runtime-plugin-hmr':
         specifier: workspace:3.5.7
@@ -4366,6 +4366,63 @@ packages:
   '@esri/calcite-ui-icons@3.31.0':
     resolution: {integrity: sha512-Ca3xVXU0LoxljEebuM9r3ss4tyXBfHROcxlFmbNwa2kDTVNSjUKCBgthgXnMD7akgguwwcL7zGnAp645SkJpow==}
     hasBin: true
+
+  '@farmfe/plugin-react-darwin-arm64@1.2.4':
+    resolution: {integrity: sha512-LrXgdrOFdKZYdInbddu5I7I5vaO6xVgsE/eDwLWk4y3uUvom6efAMFPPpI8n8rAxvpifFwrLVnKY24p0+tfS2w==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@farmfe/plugin-react-darwin-x64@1.2.4':
+    resolution: {integrity: sha512-JlFOm8/298kJ/1CqRPG7ppHLr4q93a+5K8PnAZhPm8lXj0HpKy7IMs9Y5tw6OTbWeSVB7IPhEAE1SdbIohhhCg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@farmfe/plugin-react-linux-arm64-gnu@1.2.4':
+    resolution: {integrity: sha512-ygSDQ3M6/nlCVaAEY4OvIHpPb7xGarlkK3kk021ULr58tyxIQtu4NIcwgXPsPx94UGyWiRl51FDEWqT3tE7y8Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@farmfe/plugin-react-linux-arm64-musl@1.2.4':
+    resolution: {integrity: sha512-gWmsS13cGiVl+6SbSu/zOZiESqf41emJ0ZhI/hCR0ZVOVMQK3RFKOxZbZldu8jgYI6wJPKbQrDwnELpN5i12YQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@farmfe/plugin-react-linux-x64-gnu@1.2.4':
+    resolution: {integrity: sha512-3xxoUUNw2qJrr7cv2lVwhQ3fNAbmHR4JkM2VXezXIU3oCIGqQZMUEMt00pMqxa6UD2qM/4BFV76daEyNUCj8Uw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@farmfe/plugin-react-linux-x64-musl@1.2.4':
+    resolution: {integrity: sha512-WacHUQjzbcBAvEMxP1H6ie0Sofd7C3KXt/FybM+Gk76L24iL0+M2rdFGmh5MomziJ1ejAuR7In1yThH96u7hXQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@farmfe/plugin-react-win32-arm64-msvc@1.2.4':
+    resolution: {integrity: sha512-SEY1RRi7ZpXVdlUubP7GLgQfqb8mcTR/vQjEfjw5UkXN6he4B0T+ueCQv+Eculjkpx2NNbO96AGBJgRC82aTfw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@farmfe/plugin-react-win32-ia32-msvc@1.2.4':
+    resolution: {integrity: sha512-eUSfSBiNIiKREtUb0pT8ztvpcEZMWhLbqqTR4cC4HAk/eNkrH/06tCDdFJefrSLmV1bsR1HzL+3SanNhBn3p3Q==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@farmfe/plugin-react-win32-x64-msvc@1.2.4':
+    resolution: {integrity: sha512-GgDV4d4V8WspbLs333caVBjAwRwy6/47eDOS1OQFQThOC0dOr5IwbipTywihAKQQa9zfKt8wTp7zKIPDth0TGQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@farmfe/plugin-react@1.2.4':
+    resolution: {integrity: sha512-8CKKbkqsNyS/GSzorzCPzf+YKg6ckcCF1Ze+QkrqA0wbU2I8yMSJUvKr/oCFKsyhLBf02GODvsGWK3WM+GqrXg==}
 
   '@farmfe/utils@0.0.1':
     resolution: {integrity: sha512-QLbgNrojcvxfumXA/H329XAXhoCahmeSH3JmaiwwJEGS2QAmWfgAJMegjwlt6OmArGVO4gSbJ7Xbmm1idZZs+g==}
@@ -18596,6 +18653,45 @@ snapshots:
       - '@floating-ui/utils'
 
   '@esri/calcite-ui-icons@3.31.0': {}
+
+  '@farmfe/plugin-react-darwin-arm64@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-darwin-x64@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-linux-arm64-gnu@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-linux-arm64-musl@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-linux-x64-gnu@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-linux-x64-musl@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-win32-arm64-msvc@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-win32-ia32-msvc@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react-win32-x64-msvc@1.2.4':
+    optional: true
+
+  '@farmfe/plugin-react@1.2.4':
+    optionalDependencies:
+      '@farmfe/plugin-react-darwin-arm64': 1.2.4
+      '@farmfe/plugin-react-darwin-x64': 1.2.4
+      '@farmfe/plugin-react-linux-arm64-gnu': 1.2.4
+      '@farmfe/plugin-react-linux-arm64-musl': 1.2.4
+      '@farmfe/plugin-react-linux-x64-gnu': 1.2.4
+      '@farmfe/plugin-react-linux-x64-musl': 1.2.4
+      '@farmfe/plugin-react-win32-arm64-msvc': 1.2.4
+      '@farmfe/plugin-react-win32-ia32-msvc': 1.2.4
+      '@farmfe/plugin-react-win32-x64-msvc': 1.2.4
 
   '@farmfe/utils@0.0.1': {}
 
